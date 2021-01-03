@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Get Twitter Feed</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+
+        <script type="text/x-handlebars" data-template-name="social-feed">
+            <div class="wrapper">
+                <h1>Social feed</h1>
+                <section>
+                    {{outlet}}
+                </section>
+            </div>
+        </script>        
+
+        <script type="text/x-handlebars" data-template-name="social-feed/index">
+            {{input 
+                type="text" 
+                value=handle 
+                placeholder="type a Twitter handle"
+            }}
+            <a href="javascript:void(0);" class="get-tweets-button" {{action getTweets}}>Get Tweets</a>
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="social-feed/tweets">
+            <h3>Tweets of {{{formattedHandle}}}:</h3>
+            <hr />
+            <ul>
+            {{#each}}
+                <li>{{formatTweet text}}</li>
+            {{/each}}
+            </ul>
+            {{#link-to 'social-feed.index'}}back{{/link-to}}
+        </script>
+
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/handlebars-1.1.2.js"></script>
+        <script src="js/ember-1.3.1.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+
+        <div id="menu">            
+            <a href="#new">Add new ToDo</a>
+            <a href="#">Show all ToDos</a>
+        </div>
+        <div id="content"></div>
+
+        <script type="text/template" id="tpl-list-item">
+            <li data-index="<%= index %>" class="<%= done %>">
+                <span><%= index+1 %>. <%= text %></span>
+                <a href="#edit/<%= index %>" id="edit">edit</a>
+                <a href="javascript:void(0);" id="change-status"><%= statusLabel %></a>
+                <a href="javascript:void(0);" id="delete">delete</a>
+            </li>
+        </script>
+
+        <script type="text/template" id="tpl-todo">
+            <div class="form">
+                <textarea></textarea>
+                <button>save</button>
+            </div>
+        </script>
+    	
+    	<script src="js/vendors/jquery-1.10.2.min.js"></script>
+    	<script src="js/vendors/underscore-min.js"></script>
+    	<script src="js/vendors/backbone.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/models/ToDo.js"></script>
+        <script src="js/collections/ToDos.js"></script>
+        <script src="js/views/list.js"></script>
+        <script src="js/views/add.js"></script>
+        <script src="js/views/edit.js"></script>
+    	<script>
+            window.onload = app.init;
+        </script>
+    </body>
+</html>

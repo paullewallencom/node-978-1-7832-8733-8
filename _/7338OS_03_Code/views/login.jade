@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	.container
+		header
+			h1 Administration
+			hr
+		section.articles
+			article
+				form(method="post", action="/admin")
+					span Username:
+					br
+					input(type="text", name="username")
+					br
+					span Password:
+					br
+					input(type="password", name="password")
+					br
+					br
+					input(type="submit", value="login")

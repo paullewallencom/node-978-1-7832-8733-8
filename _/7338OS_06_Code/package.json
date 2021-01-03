@@ -1,0 +1,15 @@
+{
+	"name": "FlickrUploader",
+	"description": "Command line tool for uploading pictures to Flickr",
+	"version": "0.0.1",
+	"dependencies": {
+		"flapi": "1.1.0",
+		"open": "0.0.4",
+		"optimist": "0.6.1",
+		"glob": "3.2.9"
+	},
+	"main": "index.js",
+	"bin": {
+		"flickruploader": "./index.js"
+	}
+}

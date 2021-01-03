@@ -1,0 +1,16 @@
+extends layout
+block content
+	.container(ng-controller="BlogCtrl")
+		header
+			.search
+				input(type="text", placeholder="type a filter here", ng-model="filterText")
+			h1 Blog
+			hr
+		section.articles
+			article(ng-repeat="article in articles | filter:filterText")
+				h2 
+					{{article.title}}
+					br
+					small published on {{article.date}}
+				p {{article.text}}
+	script(src='/blog.js')

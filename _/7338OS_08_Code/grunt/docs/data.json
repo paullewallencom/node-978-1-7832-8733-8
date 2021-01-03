@@ -1,0 +1,43 @@
+{
+    "project": {
+        "name": "Project",
+        "description": "Description"
+    },
+    "files": {
+        "src\\A.js": {
+            "name": "src\\A.js",
+            "modules": {},
+            "classes": {
+                "A": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "A": {
+            "name": "A",
+            "shortname": "A",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\A.js",
+            "line": 1,
+            "description": "This is the description for my class."
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\A.js",
+            "line": 7,
+            "description": "My method description.  Like other pieces of your comment blocks, \nthis can span multiple lines.",
+            "itemtype": "method",
+            "name": "method",
+            "class": "A"
+        }
+    ],
+    "warnings": []
+}

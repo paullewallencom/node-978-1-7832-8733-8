@@ -1,0 +1,12 @@
+{
+	"name": "FileBrowser",
+	"main": "index.html",
+	"window": {
+		"toolbar": false,
+		"width": 690,
+		"height": 900
+	},
+	"dependencies": {
+		"image-size": "0.2.3"
+	}
+}

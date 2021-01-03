@@ -1,0 +1,71 @@
+body, body #login input[type="text"], body #login input[type="text"].error, body #login input[type="password"] {
+  width: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #9E9E9E;
+  font-family: Arial;
+}
+body #login {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px 0 0 30px;
+}
+body #login label {
+  display: block;
+  margin: 0 0 10px 0;
+  color: #4f4f4f;
+}
+body #login input[type="text"], body #login input[type="text"].error, body #login input[type="password"], body #login input[type="submit"], body #login input[type="button"] {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+}
+body #login input[type="text"], body #login input[type="text"].error, body #login input[type="submit"], body #login input[type="button"] {
+  margin-bottom: 20px;
+}
+body #login input[type="text"], body #login input[type="password"], body #login input[type="submit"], body #login input[type="button"] {
+  border: solid 3px #8DB7CD;
+}
+body #login input[type="text"]:focus, body #login input[type="text"].error:focus, body #login input[type="password"]:focus, body #login input[type="submit"]:focus, body #login input[type="button"]:focus {
+  outline: 0;
+  background: #ededed;
+}
+body #login input[type="text"].error {
+  border: solid 1px #F00;
+}
+body #login input[type="password"] {
+  margin-bottom: 40px;
+}
+body #login input[type="submit"], body #login input[type="button"] {
+  background: -webkit-linear-gradient(0deg, #d4ffff 0%, #8DB7CD 100%);
+  background: -moz-linear-gradient(0deg, #d4ffff 0%, #8DB7CD 100%);
+  background: -ms-linear-gradient(0deg, #d4ffff 0%, #8DB7CD 100%);
+  background: -o-linear-gradient(0deg, #d4ffff 0%, #8DB7CD 100%);
+  background: linear-gradient(0deg, #d4ffff 0%, #8DB7CD 100%);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8DB7CD',endColorstr='#FFD4FFFF',GradientType=0);
+  width: 80px;
+}
+body #login input[type="submit"] {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8DB7CD', endColorstr='#FFD4FFFF',GradientType=0);
+}
+body #login input[type="button"] {
+  filter: alpha(opacity=60);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+}
+body #login input[type="button"]:hover {
+  filter: alpha(opacity=100);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+}

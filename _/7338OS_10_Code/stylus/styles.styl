@@ -1,0 +1,14 @@
+brandColor = #FF993D
+borderSettings = { size: 3px, side: '-top' }
+
+paragraph-border(size, side = '')
+	if size > 2px
+		border{side}: dotted size #999
+	else
+		border{side}: solid size #999
+
+body
+	font-size: 20px
+	p
+		color: brandColor
+		paragraph-border(borderSettings.size, borderSettings.side)

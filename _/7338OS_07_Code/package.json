@@ -1,0 +1,9 @@
+{
+	"name": "TwitterFeedShower",
+	"description": "Show Twitter feed",
+	"version": "0.0.1",
+	"dependencies": {
+		"twit": "*"
+	},
+	"main": "index.js"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "GulpTest",
+  "version": "0.0.1",
+  "description": "GulpTest",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "3.5.2",
+    "gulp-concat": "2.1.7",
+    "gulp-uglify": "0.2.0",
+    "gulp-rename": "1.0.0",
+    "through2": "0.4.1"
+  }
+}
